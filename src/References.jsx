@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 
-const images = [
-  "/src/assets/badrum-läggning.jpg",
-  "/src/assets/fasad-målning.jpg",
-  "/src/assets/golvslipning.jpg",
-];
+import badrumImage from "/src/assets/badrum-läggning.jpg";
+import fasadImage from "/src/assets/fasad-målning.jpg";
+import golvslipningImage from "/src/assets/golvslipning.jpg";
+
+const images = [badrumImage, fasadImage, golvslipningImage];
 
 const References = () => {
   const [selectedImage, setSelectedImage] = useState(null);
