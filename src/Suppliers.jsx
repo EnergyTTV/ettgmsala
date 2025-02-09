@@ -1,12 +1,13 @@
 import forboLogo from "/src/assets/forbo.svg";
 import gerflorLogo from "/src/assets/gerflor.svg";
 import tarkettLogo from "/src/assets/tarkett.svg";
+import duroLogo from "/src/assets/duro.svg"
 
 const suppliers = [
   { name: "Supplier 1", logo: forboLogo },
   { name: "Supplier 2", logo: gerflorLogo },
   { name: "Supplier 3", logo: tarkettLogo },
-  { name: "Supplier 4", logo: "https://via.placeholder.com/100" },
+  { name: "Supplier 4", logo: duroLogo },
 ];
   
   const Suppliers = () => {
