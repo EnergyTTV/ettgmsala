@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import logo from "/src/assets/logo-vit.png"
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ const NavBar = () => {
         {/* Centered Logo */}
         <div className="flex justify-center flex-shrink-0 mx-10">
           <a href="/">
-            <img className="h-32 bg-black rounded-2xl p-2 -mb-6 mt-4" src="/src/assets/logo-vit.svg" alt="Logo" loading="lazy" />
+            <img className="h-32 bg-black rounded-2xl p-2 -mb-6 mt-4" src={logo} alt="Logo" loading="lazy" />
           </a>
         </div>
 
