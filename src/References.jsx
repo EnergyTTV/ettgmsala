@@ -6,9 +6,13 @@ import badrumImage from "/src/assets/badrum-läggning.jpg";
 import fasadImage from "/src/assets/fasad-målning.jpg";
 import golvslipningImage from "/src/assets/golvslipning.jpg";
 
-const images = [badrumImage, fasadImage, golvslipningImage];
+const images = [
+  { src: badrumImage },
+  { src: fasadImage },
+  { src: golvslipningImage }
+];
 
-const Carousel = () => {
+const Carousel = ({ caption }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -21,13 +25,21 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full md:w-1/3 h-auto">
-      <img
-        src={images[currentIndex]}
-        alt={`Slide ${currentIndex + 1}`}
-        className="w-full h-96 object-cover transition-transform duration-500 ease-in-out"
-        onClick={() => setSelectedImage(images[currentIndex])}
-      />
+    <div className="relative w-full md:w-1/3 h-auto overflow-hidden">
+      <div className="flex w-full h-80 transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image.src}
+            alt={`Slide ${index + 1}`}
+            className="w-full h-80 object-cover flex-shrink-0"
+            onClick={() => setSelectedImage(image.src)}
+          />
+        ))}
+      </div>
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-opacity-50 text-white px-4 py-2 text-3xl">
+        {caption}
+      </div>
       <button
         className="absolute top-1/2 left-2 transform -translate-y-1/2 p-2 rounded-full transition-colors duration-300 hover:bg-black hover:bg-opacity-50"
         onClick={prevSlide}
@@ -56,9 +68,9 @@ const Carousel = () => {
 const References = () => {
   return (
     <div className="bg-black w-screen flex flex-col md:flex-row justify-between">
-      <Carousel />
-      <Carousel />
-      <Carousel />
+      <Carousel caption="Mattläggning" />
+      <Carousel caption="Målning" />
+      <Carousel caption="Golvslipning" />
     </div>
   );
 };
