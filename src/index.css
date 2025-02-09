@@ -1,0 +1,25 @@
+/* Hide scrollbar initially */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Make scrollbar fully transparent when not scrolling */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  transition: background 0.5s ease-in-out;
+}
+
+/* Show scrollbar when scrolling */
+body:active ::-webkit-scrollbar-thumb,
+body:hover ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+}
