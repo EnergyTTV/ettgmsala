@@ -1,4 +1,5 @@
 import backgroundImage from "/src/assets/starfors_1440p.jpg";
+import { FaInstagram } from "react-icons/fa"; // Import Instagram icon
 
 const Hero = () => {
   return (
@@ -14,9 +15,17 @@ const Hero = () => {
           Välkommen till Ett Golv & Måleri i Sala AB
         </div>
       </div>
+      {/* Instagram Logo */}
+      <a 
+        href="https://www.instagram.com/your-instagram-handle" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="absolute bottom-4 flex justify-center w-full text-white"
+      >
+        <FaInstagram className="text-6xl hover:text-gray-400 transition duration-300" />
+      </a>
     </div>
   );
 };
 
 export default Hero;
-

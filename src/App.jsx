@@ -25,7 +25,7 @@ function App() {
         <section id="leverantörer">
           <Suppliers />
         </section>
-        <CookieHandler /> {/* Display visit count */}
+        <CookieHandler />
     </>
   )
 }
