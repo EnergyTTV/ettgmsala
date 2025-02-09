@@ -21,11 +21,11 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-1/3 h-auto">
+    <div className="relative w-full md:w-1/3 h-auto">
       <img
         src={images[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
-        className="w-full h-80 object-cover"
+        className="w-full h-80 object-cover transition-transform duration-500 ease-in-out"
         onClick={() => setSelectedImage(images[currentIndex])}
       />
       <button
@@ -55,7 +55,7 @@ const Carousel = () => {
 
 const References = () => {
   return (
-    <div className="bg-black w-screen flex justify-between">
+    <div className="bg-black w-screen flex flex-col md:flex-row justify-between">
       <Carousel />
       <Carousel />
       <Carousel />
