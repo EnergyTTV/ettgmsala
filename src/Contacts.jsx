@@ -13,7 +13,7 @@ const contacts = [
     },
     {
       name: "Ted Smeds",
-      phone: "076-092-07-87",
+      phone: "076-092 07 87",
       email: "ted@1gm.se",
     }
 ];
@@ -45,7 +45,11 @@ const Contacts = () => {
                 contact.phone
               )}
             </h1>
-            <h1 className="text-xl">{contact.email}</h1>
+            <h1 className="text-xl">
+              <a href={`mailto:${contact.email}`} className="text-blue-400 hover:underline">
+                {contact.email}
+              </a>
+            </h1>
           </div>
         ))}
       </div>
