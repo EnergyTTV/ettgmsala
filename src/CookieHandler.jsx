@@ -3,62 +3,39 @@ import Cookies from "js-cookie";
 
 const CookieHandler = () => {
     const [showConsent, setShowConsent] = useState(false);
-    const [userChoice, setUserChoice] = useState(null);
 
     useEffect(() => {
+        // Check if user has accepted or rejected cookies
         const consent = Cookies.get("cookieConsent");
         if (!consent) {
-            setShowConsent(true);
-        } else {
-            setUserChoice(consent);
+            setShowConsent(true); // Show consent popup if no preference exists
         }
     }, []);
 
     const acceptCookies = () => {
-        Cookies.set("cookieConsent", "accepted", { expires: 365 });
+        Cookies.set("cookieConsent", "accepted", { expires: 365 }); // Store acceptance for 1 year
         setShowConsent(false);
-        setUserChoice("accepted");
     };
 
     const rejectCookies = () => {
-        Cookies.set("cookieConsent", "rejected", { expires: 365 });
+        Cookies.set("cookieConsent", "rejected", { expires: 365 }); // Store rejection for 1 year
         setShowConsent(false);
-        setUserChoice("rejected");
-    };
-
-    const resetCookies = () => {
-        Cookies.remove("cookieConsent");
-        setShowConsent(true);
-        setUserChoice(null);
     };
 
     return (
-        <>
-            {/* Cookie Consent Popup (Only shown if no choice is made) */}
-            {showConsent && (
-                <div className="fixed bottom-4 left-4 right-4 bg-black text-white p-4 rounded-md flex justify-between items-center">
-                    <p className="text-sm">This website uses cookies to enhance your experience.</p>
-                    <div className="flex space-x-3">
-                        <button onClick={acceptCookies} className="bg-green-500 px-3 py-2 rounded text-white">
-                            Accept
-                        </button>
-                        <button onClick={rejectCookies} className="bg-red-500 px-3 py-2 rounded text-white">
-                            Reject
-                        </button>
-                    </div>
+        showConsent && (
+            <div className="fixed bottom-4 left-4 right-4 bg-black text-white p-4 rounded-md flex justify-between items-center">
+                <p className="text-sm">This website uses cookies to enhance your experience.</p>
+                <div className="flex space-x-3">
+                    <button onClick={acceptCookies} className="bg-green-500 px-3 py-2 rounded text-white">
+                        Accept
+                    </button>
+                    <button onClick={rejectCookies} className="bg-red-500 px-3 py-2 rounded text-white">
+                        Reject
+                    </button>
                 </div>
-            )}
-
-            {/* Settings Button (Only visible after choice is made) */}
-            {userChoice && (
-                <button
-                    onClick={resetCookies}
-                    className="fixed bottom-4 right-4 bg-blue-500 text-white px-3 py-2 rounded-md"
-                >
-                    Change Cookie Preferences
-                </button>
-            )}
-        </>
+            </div>
+        )
     );
 };
 
