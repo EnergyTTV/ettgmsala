@@ -25,7 +25,7 @@ const Carousel = () => {
       <img
         src={images[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
-        className="w-full h-80 object-cover transition-transform duration-500 ease-in-out"
+        className="w-full h-96 object-cover transition-transform duration-500 ease-in-out"
         onClick={() => setSelectedImage(images[currentIndex])}
       />
       <button
