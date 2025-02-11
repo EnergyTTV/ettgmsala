@@ -34,7 +34,7 @@ const NavBar = () => {
       <div className="w-full flex items-center justify-between">
         {/* Left Menu (Hidden on Mobile) */}
         <div className="hidden md:flex space-x-10 flex-1 justify-end">
-          {["hem", "referenser"].map((id) => (
+          {["våra tjänster"].map((id) => (
             <button key={id} onClick={() => handleScrollToSection(id)} className={navButton}>
               {id.toUpperCase()}
             </button>
@@ -77,7 +77,7 @@ const NavBar = () => {
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
         <div className="absolute top-full right-0 w-1/2 bg-black text-white flex flex-col items-center space-y-4 py-4 md:hidden">
-          {["referenser", "leverantörer", "kontakt"].map((id) => (
+          {["våra tjäsnter", "leverantörer", "kontakt"].map((id) => (
             <button key={id} onClick={() => handleScrollToSection(id)} className={navButton}>
               {id.toUpperCase()}
             </button>

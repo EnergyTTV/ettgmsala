@@ -1,9 +1,10 @@
 const Mattlaggning = () => {
   return (
-    <div>
+    <div className="w-full h-screen bg-gray-100">
       
     </div>
-  )
-}
+  );
+};
 
-export default Mattlaggning
+
+export default Mattlaggning;

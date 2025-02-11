@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<>
           <Hero />
-          <section id="referenser">
+          <section id="våra tjänster">
             <References />
           </section>
           <section id="kontakt">
