@@ -10,12 +10,13 @@ import "swiper/css/pagination";
 
 const references = [
   { src: badrumImage, caption: "Mattläggning", link: "/mattlaggning" },
+  { src: golvslipningImage, caption: "Golvslipning", link: "/golvslipning" },
   {
     src: fasadImage,
-    caption: "Målning & Tapetsering",
-    link: "/malning-tapetsering",
+    caption: "Målning",
+    link: "/malning",
   },
-  { src: golvslipningImage, caption: "Golvslipning", link: "/golvslipning" },
+  { src: golvslipningImage, caption: "Tapetsering", link: "/tapetsering" },
 ];
 
 const References = () => {
@@ -48,7 +49,7 @@ const References = () => {
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-black bg-opacity-60 text-white px-4 py-2 text-2xl text-center rounded">
+                  <div className="bg-black text-white px-4 py-2 text-3xl text-center rounded">
                     {ref.caption}
                   </div>
                 </div>

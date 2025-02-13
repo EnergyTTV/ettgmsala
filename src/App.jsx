@@ -5,10 +5,11 @@ import NavBar from "./NavBar";
 import CookieHandler from "./CookieHandler";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Mattlaggning from "./pages/Mattlaggning";
-import MalningTapetsering from "./pages/MalningTapetsering";
+import Malning from "./pages/Malning";
 import Golvslipning from "./pages/Golvslipning";
 import References from "./References";
 import backgroundImage from "/src/assets/wallpaper1.webp";
+import Tapetsering from "./pages/Tapetsering";
 
 function App() {
   return (
@@ -40,11 +41,9 @@ function App() {
               }
             />
             <Route path="/mattlaggning" element={<Mattlaggning />} />
-            <Route
-              path="/malning-tapetsering"
-              element={<MalningTapetsering />}
-            />
+            <Route path="/malning" element={<Malning />} />
             <Route path="/golvslipning" element={<Golvslipning />} />
+            <Route path="/tapetsering" element={<Tapetsering />} />
           </Routes>
         </div>
       </div>

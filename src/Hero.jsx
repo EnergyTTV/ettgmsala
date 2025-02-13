@@ -1,4 +1,5 @@
 import ScrollIndicator from "./ScrollIndicator";
+import SocialMediaBar from "./SocialMediaBar";
 
 const Hero = () => {
   return (
@@ -9,8 +10,10 @@ const Hero = () => {
             Välkommen till ETTGM!
           </h1>
           <p className="text-gray-300 text-center text-xl mt-5">
-            Vi erbjuder allt inom Golv och Målning.
+            Vi erbjuder det mesta inom Golv och Målning, i samarbete med Happy
+            Homes Sala.
           </p>
+          <SocialMediaBar />
           <ScrollIndicator />
         </div>
       </div>

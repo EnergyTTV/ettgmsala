@@ -37,7 +37,7 @@ const Contacts = () => {
       className="flex-grow grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 p-4"
     >
       {contacts.map((contact, index) => (
-        <div key={index} className="m-10 text-center text-white">
+        <div key={index} className="m-3 text-center text-white">
           <h1 className="text-4xl">{contact.name}</h1>
           <h1 className="text-2xl">
             {isMobile ? (

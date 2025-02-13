@@ -1,3 +1,4 @@
+import Suppliers from "../Suppliers";
 import badrumImage from "/src/assets/badrum-läggning.jpg";
 
 const tjänster = [
@@ -13,10 +14,10 @@ const tjänster = [
   },
 ];
 
-const Mattlaggning = () => {
+const Tapetsering = () => {
   return (
-    <div className="relative w-full h-screen">
-      <div className="absolute inset-0 flex justify-center items-center">
+    <div className="relative w-full min-h-screen">
+      <div className="absolute inset-0 flex justify-center items-center pt-60">
         <div className="text-center text-white">
           <div className="flex flex-wrap justify-center gap-6">
             {tjänster.map((service, index) => (
@@ -34,10 +35,11 @@ const Mattlaggning = () => {
               </div>
             ))}
           </div>
+          <Suppliers />
         </div>
       </div>
     </div>
   );
 };
 
-export default Mattlaggning;
+export default Tapetsering;

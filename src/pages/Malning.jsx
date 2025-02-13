@@ -13,7 +13,7 @@ const tjänster = [
   },
 ];
 
-const MalningTapetsering = () => {
+const Malning = () => {
   return (
     <div className="relative w-full h-screen">
       <img
@@ -43,4 +43,4 @@ const MalningTapetsering = () => {
   );
 };
 
-export default MalningTapetsering;
+export default Malning;

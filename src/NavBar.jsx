@@ -29,7 +29,7 @@ const NavBar = () => {
           <a href="/">
             <img
               className={`rounded-2xl p-2 transition-all duration-300 ${
-                shrink ? "h-26 mt-10 rounded-xl" : "h-40 mt-40"
+                shrink ? "h-26 mt-14 rounded-xl" : "h-40 mt-40"
               }`}
               src={logo}
               alt="Logo"
