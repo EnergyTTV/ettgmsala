@@ -34,7 +34,7 @@ const Contacts = () => {
   return (
     <div
       id="contact"
-      className="bg-black flex-grow grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 p-4"
+      className="flex-grow grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 p-4"
     >
       {contacts.map((contact, index) => (
         <div key={index} className="m-10 text-center text-white">

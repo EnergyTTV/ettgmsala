@@ -13,30 +13,43 @@ import backgroundImage from "/src/assets/wallpaper1.webp";
 function App() {
   return (
     <BrowserRouter>
-      <div className="absolute inset-0 bg-gray-800 opacity-30"></div>
-      <div
-        className="h-screen bg-fixed bg-cover bg-center"
-        style={{ backgroundImage: `url(${backgroundImage})` }} // Apply background image here
-      >
-        <NavBar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero />
-                <References />
-                <Contacts />
-                <CookieHandler />
-              </>
-            }
-          />
-          <Route path="/mattlaggning" element={<Mattlaggning />} />
-          <Route path="/malning-tapetsering" element={<MalningTapetsering />} />
-          <Route path="/golvslipning" element={<Golvslipning />} />
-        </Routes>
+      {/* Wrapper for background and overlay */}
+      <div className="relative min-h-screen">
+        {/* Background image container */}
+        <div
+          className="absolute inset-0 bg-fixed bg-cover bg-center z-0"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
+          {/* Dark overlay only for the background image */}
+          <div className="absolute inset-0 bg-gray-800 opacity-50"></div>
+        </div>
+
+        {/* Content section */}
+        <div className="relative z-10">
+          <NavBar />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <References />
+                  <Contacts />
+                  <CookieHandler />
+                </>
+              }
+            />
+            <Route path="/mattlaggning" element={<Mattlaggning />} />
+            <Route
+              path="/malning-tapetsering"
+              element={<MalningTapetsering />}
+            />
+            <Route path="/golvslipning" element={<Golvslipning />} />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );
 }
+
 export default App;

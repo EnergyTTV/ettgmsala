@@ -22,7 +22,7 @@ const References = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-black w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center">
       <h2 className="text-white text-3xl font-bold my-5">Våra Tjänster</h2>
       <div className="w-full max-w-4xl">
         <Swiper
