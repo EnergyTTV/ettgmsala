@@ -1,5 +1,6 @@
 import ScrollIndicator from "./ScrollIndicator";
 import SocialMediaBar from "./SocialMediaBar";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,6 +14,12 @@ const Hero = () => {
             Vi erbjuder det mesta inom Golv och Målning, i samarbete med Happy
             Homes Sala.
           </p>
+          <Link
+            to="/leverantörer"
+            className="mt-5 px-6 py-3 text-lg bg-black text-white rounded-lg hover:bg-gray-800 transition duration-300"
+          >
+            Våra Leverantörer
+          </Link>
           <SocialMediaBar />
           <ScrollIndicator />
         </div>

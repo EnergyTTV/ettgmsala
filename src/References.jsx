@@ -9,12 +9,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const references = [
-  { src: badrumImage, caption: "Mattläggning", link: "/mattlaggning" },
+  { src: badrumImage, caption: "Mattläggning", link: "/mattläggning" },
   { src: golvslipningImage, caption: "Golvslipning", link: "/golvslipning" },
   {
     src: fasadImage,
     caption: "Målning",
-    link: "/malning",
+    link: "/målning",
   },
   { src: golvslipningImage, caption: "Tapetsering", link: "/tapetsering" },
 ];

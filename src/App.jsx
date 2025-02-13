@@ -10,6 +10,7 @@ import Golvslipning from "./pages/Golvslipning";
 import References from "./References";
 import backgroundImage from "/src/assets/wallpaper1.webp";
 import Tapetsering from "./pages/Tapetsering";
+import Suppliers from "./pages/Suppliers";
 
 function App() {
   return (
@@ -40,10 +41,11 @@ function App() {
                 </>
               }
             />
-            <Route path="/mattlaggning" element={<Mattlaggning />} />
-            <Route path="/malning" element={<Malning />} />
+            <Route path="/mattläggning" element={<Mattlaggning />} />
+            <Route path="/målning" element={<Malning />} />
             <Route path="/golvslipning" element={<Golvslipning />} />
             <Route path="/tapetsering" element={<Tapetsering />} />
+            <Route path="/leverantörer" element={<Suppliers />} />
           </Routes>
         </div>
       </div>

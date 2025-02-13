@@ -12,7 +12,7 @@ const suppliers = [
 
 const Suppliers = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4">
+    <div className="grid grid-cols-2 md:grid-cols-6 justify-center items-center pt-60">
       {suppliers.map((supplier, index) => (
         <div key={index} className="flex flex-col items-center p-4">
           <img

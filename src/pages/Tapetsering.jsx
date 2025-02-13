@@ -1,4 +1,3 @@
-import Suppliers from "../Suppliers";
 import badrumImage from "/src/assets/badrum-läggning.jpg";
 
 const tjänster = [
@@ -35,7 +34,6 @@ const Tapetsering = () => {
               </div>
             ))}
           </div>
-          <Suppliers />
         </div>
       </div>
     </div>
