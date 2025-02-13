@@ -1,7 +1,7 @@
 import forboLogo from "/src/assets/forbo.svg";
 import gerflorLogo from "/src/assets/gerflor.svg";
 import tarkettLogo from "/src/assets/tarkett.svg";
-import duroLogo from "/src/assets/duro.svg"
+import duroLogo from "/src/assets/duro.svg";
 
 const suppliers = [
   { name: "Supplier 1", logo: forboLogo },
@@ -9,20 +9,23 @@ const suppliers = [
   { name: "Supplier 3", logo: tarkettLogo },
   { name: "Supplier 4", logo: duroLogo },
 ];
-  
-  const Suppliers = () => {
-    return (
-      <div className="bg-gray-100 rounded-xl shadow-md">
-        <div className="grid grid-cols-2 md:grid-cols-4">
-          {suppliers.map((supplier, index) => (
-            <div key={index} className="flex flex-col items-center bg-black p-4 shadow">
-              <img src={supplier.logo} alt={supplier.name} className="w-40 h-auto object-contain" />
-            </div>
-          ))}
-        </div>
+
+const Suppliers = () => {
+  return (
+    <div className="bg-gray-100 rounded-xl shadow-md">
+      <div className="grid grid-cols-2 md:grid-cols-4">
+        {suppliers.map((supplier, index) => (
+          <div key={index} className="flex flex-col items-center p-4 shadow">
+            <img
+              src={supplier.logo}
+              alt={supplier.name}
+              className="w-40 h-auto object-contain"
+            />
+          </div>
+        ))}
       </div>
-    );
-  };
-  
-  export default Suppliers;
-  
+    </div>
+  );
+};
+
+export default Suppliers;

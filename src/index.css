@@ -23,3 +23,15 @@ html {
 ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.5);
 }
+
+/* Change arrow colors */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important; /* Change to any color */
+}
+
+/* If you want bigger arrows */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem !important; /* Adjust arrow size */
+}
