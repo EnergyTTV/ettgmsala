@@ -19,11 +19,11 @@ const References = () => {
   return (
     <div className="bg-black w-screen flex flex-col items-center">
       <h2 className="text-white text-3xl font-bold my-5">Våra Tjänster</h2>
-      <div className="w-full flex flex-col md:flex-row justify-between">
+      <div className="px-3 w-full flex flex-col md:flex-row justify-between">
         {references.map((ref, index) => (
           <div
             key={index}
-            className="relative w-full md:w-1/3 h-auto overflow-hidden md:px-3 group"
+            className="relative w-full md:w-1/3 h-auto overflow-hidden pb-4 md:px-3 group"
             onClick={() => navigate(ref.link)}
             style={{ cursor: "pointer" }}
           >
@@ -38,8 +38,10 @@ const References = () => {
             <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
 
             {/* Caption */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white px-4 py-4 text-3xl w-full text-center">
-              {ref.caption}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="bg-black bg-opacity-30 backdrop-blur-md text-white px-4 py-2 text-3xl text-center rounded">
+                {ref.caption}
+              </div>
             </div>
           </div>
         ))}
