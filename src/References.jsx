@@ -39,7 +39,7 @@ const References = () => {
           {references.map((ref, index) => (
             <SwiperSlide key={index}>
               <div
-                className="relative w-full h-100 overflow-hidden group cursor-pointer flex justify-center"
+                className="w-full h-100 overflow-hidden group cursor-pointer flex justify-center"
                 onClick={() => navigate(ref.link)}
               >
                 <img

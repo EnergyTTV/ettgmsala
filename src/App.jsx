@@ -35,9 +35,9 @@ function App() {
               element={
                 <>
                   <Hero />
+                  <CookieHandler />
                   <References />
                   <Contacts />
-                  <CookieHandler />
                 </>
               }
             />
