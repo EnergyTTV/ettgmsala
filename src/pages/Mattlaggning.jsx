@@ -3,7 +3,7 @@ import badrumImage from "/src/assets/badrum-läggning.jpg";
 const tjänster = [
   {
     name: "Badrum",
-    text: "",
+    text: "Plastmattor är ett populärt val för badrumsgolv tack vare deras vattentåliga egenskaper, slitstyrka och enkelhet att underhålla. För att få ett hållbart och snyggt resultat är det viktigt att lägga plastmattan på rätt sätt.",
     src: badrumImage,
   },
   {
