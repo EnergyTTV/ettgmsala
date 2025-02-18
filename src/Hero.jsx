@@ -16,7 +16,7 @@ const Hero = () => {
           </p>
           <Link
             to="/leverantörer"
-            className="mt-5 px-6 py-3 text-lg bg-black text-white rounded-lg hover:bg-gray-800 transition duration-300"
+            className="mt-5 px-6 py-3 text-lg bg-black/25 text-white rounded-2xl hover:bg-black transition duration-300"
           >
             Våra Leverantörer
           </Link>

@@ -8,7 +8,7 @@ const SocialMediaBar = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaInstagram className="text-white w-14 h-14 hover:text-pink-500 cursor-pointer" />
+        <FaInstagram className="text-white w-14 h-14 hover:bg-black/50 rounded-2xl cursor-pointer" />
       </a>
     </div>
   );

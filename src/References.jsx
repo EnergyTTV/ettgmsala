@@ -24,7 +24,7 @@ const References = () => {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <h2 className="text-white text-3xl font-bold my-5">Våra Tjänster</h2>
+      <h2 className="text-white text-4xl font-bold my-5">Våra Tjänster</h2>
       <div className="w-full max-w-4xl">
         <Swiper
           modules={[Navigation, Scrollbar, Autoplay]}
@@ -47,9 +47,9 @@ const References = () => {
                   alt={ref.caption}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-80 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-black text-white px-4 py-2 text-3xl text-center rounded">
+                  <div className="bg-black/50 text-white px-4 py-2 text-3xl text-center rounded-md">
                     {ref.caption}
                   </div>
                 </div>
