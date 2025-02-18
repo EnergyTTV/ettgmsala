@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logo from "/src/assets/logo-vit.png";
+import logo from "/src/assets/logo-vit.svg";
 
 const NavBar = () => {
   const [shrink, setShrink] = useState(false);
