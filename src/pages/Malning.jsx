@@ -15,22 +15,19 @@ const tjänster = [
 
 const Malning = () => {
   return (
-    <div className="relative w-full h-screen">
-      <img
-        className="top-0 left-0 w-full h-full object-cover"
-        src={backgroundImage}
-        alt="Background"
-        loading="lazy"
-      />
-      <div className="absolute inset-0 flex justify-center items-center">
+    <div className="relative w-full min-h-screen">
+      <div className="inset-0 flex justify-center items-center pt-60">
         <div className="text-center text-white">
-          <div className="flex justify-center space-x-10">
+          <div className="flex flex-wrap justify-center gap-6">
             {tjänster.map((service, index) => (
-              <div key={index} className="text-white w-1/3 p-6">
+              <div
+                key={index}
+                className="w-full sm:w-1/2 md:w-1/3 bg-transparent"
+              >
                 <img
-                  src={service.image}
+                  src={service.src}
                   alt={service.name}
-                  className="w-full h-40 object-cover rounded-md mb-4"
+                  className="w-full h-70 object-cover rounded-md mb-4"
                 />
                 <h2 className="text-2xl font-bold mb-2">{service.name}</h2>
                 <p className="text-base">{service.text}</p>

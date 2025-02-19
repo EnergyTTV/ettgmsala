@@ -16,7 +16,7 @@ const tjänster = [
 const Tapetsering = () => {
   return (
     <div className="relative w-full min-h-screen">
-      <div className="absolute inset-0 flex justify-center items-center pt-60">
+      <div className="inset-0 flex justify-center items-center pt-60">
         <div className="text-center text-white">
           <div className="flex flex-wrap justify-center gap-6">
             {tjänster.map((service, index) => (
@@ -27,7 +27,7 @@ const Tapetsering = () => {
                 <img
                   src={service.src}
                   alt={service.name}
-                  className="w-full h-100 object-cover rounded-md mb-4"
+                  className="w-full h-70 object-cover rounded-md mb-4"
                 />
                 <h2 className="text-2xl font-bold mb-2">{service.name}</h2>
                 <p className="text-base">{service.text}</p>
