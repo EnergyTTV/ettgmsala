@@ -20,7 +20,7 @@ const NavBar = () => {
   return (
     <div
       className={`fixed top-0 left-0 w-screen text-white text-xl z-50 flex items-center justify-center px-6 md:px-12 transition-all duration-300 ${
-        shrink ? "h-30 bg-black/70" : "h-20"
+        shrink ? "h-26 bg-black/70" : "h-20"
       }`}
     >
       <div className="w-full flex items-center justify-center">
