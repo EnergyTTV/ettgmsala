@@ -11,6 +11,7 @@ import References from "./References";
 import backgroundImage from "/src/assets/wallpaper1.webp";
 import Tapetsering from "./pages/Tapetsering";
 import Suppliers from "./pages/Suppliers";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
             <Route path="/tapetsering" element={<Tapetsering />} />
             <Route path="/leverantörer" element={<Suppliers />} />
           </Routes>
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
