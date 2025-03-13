@@ -1,6 +1,7 @@
 import badrumImage from "/src/assets/badrum-läggning.jpg";
 import fasadImage from "/src/assets/fasad-målning.jpg";
 import golvslipningImage from "/src/assets/golvslipning.jpg";
+import tapetseringImage from "/src/assets/tapetsering-1.jpg";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Scrollbar } from "swiper/modules";
@@ -16,7 +17,7 @@ const references = [
     caption: "Målning",
     link: "/målning",
   },
-  { src: golvslipningImage, caption: "Tapetsering", link: "/tapetsering" },
+  { src: tapetseringImage, caption: "Tapetsering", link: "/tapetsering" },
 ];
 
 const References = () => {
@@ -39,7 +40,7 @@ const References = () => {
           {references.map((ref, index) => (
             <SwiperSlide key={index}>
               <div
-                className="w-full h-100 overflow-hidden group cursor-pointer flex justify-center"
+                className="w-full h-110 overflow-hidden group cursor-pointer flex justify-center"
                 onClick={() => navigate(ref.link)}
               >
                 <img

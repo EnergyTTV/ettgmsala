@@ -10,7 +10,6 @@ import Golvslipning from "./pages/Golvslipning";
 import References from "./References";
 import backgroundImage from "/src/assets/wallpaper1.webp";
 import Tapetsering from "./pages/Tapetsering";
-import Suppliers from "./pages/Suppliers";
 import Footer from "./Footer";
 
 function App() {
@@ -46,7 +45,6 @@ function App() {
             <Route path="/målning" element={<Malning />} />
             <Route path="/golvslipning" element={<Golvslipning />} />
             <Route path="/tapetsering" element={<Tapetsering />} />
-            <Route path="/leverantörer" element={<Suppliers />} />
           </Routes>
           <Footer />
         </div>

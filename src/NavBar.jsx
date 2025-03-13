@@ -19,27 +19,21 @@ const NavBar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-screen text-white text-xl z-50 flex items-center justify-center px-6 md:px-12 transition-[height,background-color] duration-300 ${
+      className={`fixed top-0 left-0 w-screen text-xl z-50 flex items-center justify-center px-6 md:px-12 transition-all duration-500  ${
         shrink ? "h-26 bg-black/70" : "h-20"
       }`}
     >
-      <div className="w-full flex items-center justify-center">
-        {/* Centered Logo */}
-        <div className="flex place-items-center">
-          <a href="/">
-            <img
-              className={`rounded-2xl p-2 transition-[height,transform] duration-500 ease-in-out ${
-                shrink
-                  ? "h-26 rounded-xl transform origin-top"
-                  : "h-40 mt-40 transform origin-top"
-              }`}
-              src={logo}
-              alt="Logo"
-              loading="lazy"
-            />
-          </a>
-        </div>
-      </div>
+      {/* Centered Logo */}
+      <a href="/">
+        <img
+          className={`rounded-2xl p-2 origin-top transition-all duration-500  ${
+            shrink ? "h-26 rounded-xl" : "h-40 mt-40"
+          }`}
+          src={logo}
+          alt="Logo"
+          loading="lazy"
+        />
+      </a>
     </div>
   );
 };
