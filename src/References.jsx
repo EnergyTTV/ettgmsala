@@ -4,7 +4,7 @@ import golvslipningImage from "/src/assets/golvslipning.jpg";
 import tapetseringImage from "/src/assets/tapetsering-1.jpg";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Scrollbar } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -26,21 +26,30 @@ const References = () => {
   return (
     <div className="w-full flex flex-col items-center">
       <h2 className="text-white text-4xl font-bold my-5">Våra Tjänster</h2>
-      <div className="w-full max-w-4xl">
+      <div className="w-full">
         <Swiper
-          modules={[Navigation, Scrollbar, Autoplay]}
-          navigation
-          scrollbar={{
-            hide: false,
+          centeredSlides={true}
+          loop={true}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
           }}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
-          spaceBetween={20}
-          slidesPerView={1} // Default to one slide
+          speed={3000}
+          slidesPerView={"3"}
+          modules={[Autoplay]}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {references.map((ref, index) => (
             <SwiperSlide key={index}>
               <div
-                className="w-full h-110 overflow-hidden group cursor-pointer flex justify-center"
+                className="w-full h-110 overflow-hidden group cursor-pointer flex justify-center transition-transform duration-500"
                 onClick={() => navigate(ref.link)}
               >
                 <img
