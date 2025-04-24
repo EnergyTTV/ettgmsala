@@ -11,6 +11,7 @@ import References from "./References";
 import backgroundImage from "/src/assets/wallpaper1.webp";
 import Tapetsering from "./pages/Tapetsering";
 import Footer from "./Footer";
+import Employees from "./Employees";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
                   <CookieHandler />
                   <References />
                   <Contacts />
+                  <Employees />
                 </>
               }
             />
