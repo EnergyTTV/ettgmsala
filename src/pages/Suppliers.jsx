@@ -1,10 +1,10 @@
-import forboLogo from "/src/assets/companies/forbo.svg";
-import gerflorLogo from "/src/assets/companies/gerflor1.svg";
-import tarkettLogo from "/src/assets/companies/tarkett.svg";
-import duroLogo from "/src/assets/companies/duro.svg";
-import kjellbergsLogo from "/src/assets/companies/kjellbergs.svg";
-import anzaLogo from "/src/assets/companies/anza.svg";
-import boråstapeterLogo from "/src/assets/companies/borastapeter.svg";
+import forboLogo from "../assets/companies/forbo.svg";
+import gerflorLogo from "../assets/companies/gerflor1.svg";
+import tarkettLogo from "../assets/companies/tarkett.svg";
+import duroLogo from "../assets/companies/duro.svg";
+import kjellbergsLogo from "../assets/companies/kjellbergs.svg";
+import anzaLogo from "../assets/companies/anza.svg";
+import boråstapeterLogo from "../assets/companies/borastapeter.svg";
 
 const suppliers = [
   { name: "Supplier 1", logo: forboLogo },

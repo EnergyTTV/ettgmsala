@@ -5,7 +5,7 @@ const contacts = [
     name: "Mattias Collén",
     phone: "070-862 00 07",
     email: "mattias@1gm.se",
-    image: "https://picsum.photos/150",
+    image: "/src/assets/mattias.svg",
   },
   {
     name: "Ronnie Laakso",

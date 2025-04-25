@@ -12,6 +12,7 @@ import backgroundImage from "/src/assets/wallpaper1.webp";
 import Tapetsering from "./pages/Tapetsering";
 import Footer from "./Footer";
 import Employees from "./Employees";
+import Suppliers from "./pages/Suppliers";
 
 function App() {
   return (
@@ -43,6 +44,8 @@ function App() {
                 </>
               }
             />
+
+            <Route path="/leverantörer" element={<Suppliers />} />
             <Route path="/mattläggning" element={<Mattlaggning />} />
             <Route path="/målning" element={<Malning />} />
             <Route path="/golvslipning" element={<Golvslipning />} />
