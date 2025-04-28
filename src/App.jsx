@@ -29,7 +29,7 @@ function App() {
         </div>
 
         {/* Content section */}
-        <div className="relative z-10">
+        <div className="relative z-10 ">
           <NavBar />
           <Routes>
             <Route
