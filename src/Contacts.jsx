@@ -46,8 +46,8 @@ const Contacts = () => {
         <div
           key={index}
           className={`m-3 text-center text-white ${(isTablet || isMobile) && index === 2
-              ? "sm:col-span-2 sm:mx-auto"
-              : ""
+            ? "sm:col-span-2 sm:mx-auto"
+            : ""
             }`}
         >
           <img

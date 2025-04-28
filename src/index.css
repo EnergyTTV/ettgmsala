@@ -48,9 +48,12 @@ html {
   font-size: 2rem;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  transform: scale(1.2);
-  /* optional: make it pop slightly on hover */
+@media (min-width: 768px) {
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+    /* optional: make it pop slightly on hover */
+  }
 }
