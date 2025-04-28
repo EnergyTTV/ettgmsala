@@ -5,7 +5,7 @@ const contacts = [
     name: "Mattias Collén",
     phone: "070-862 00 07",
     email: "mattias@1gm.se",
-    image: "/src/assets/mattias.svg",
+    image: "https://picsum.photos/150",
   },
   {
     name: "Ronnie Laakso",
@@ -45,11 +45,10 @@ const Contacts = () => {
       {contacts.map((contact, index) => (
         <div
           key={index}
-          className={`m-3 text-center text-white ${
-            (isTablet || isMobile) && index === 2
+          className={`m-3 text-center text-white ${(isTablet || isMobile) && index === 2
               ? "sm:col-span-2 sm:mx-auto"
               : ""
-          }`}
+            }`}
         >
           <img
             src={contact.image}
