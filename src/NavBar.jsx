@@ -19,7 +19,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-screen text-xl z-50 flex items-center justify-center px-6 md:px-12 transition-all duration-500  ${
+      className={`fixed top-0 left-0 w-screen text-xl z-50 flex items-center justify-center px-6 md:px-12 transition-[height,background-color] duration-500  ${
         shrink ? "h-26 bg-black/70" : "h-20"
       }`}
     >
