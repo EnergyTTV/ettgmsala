@@ -6,7 +6,7 @@ const employees = [
     image: "https://picsum.photos/150",
   },
   {
-    name: "Nathalie Hautamäki",
+    name: "Natalie Hautamäki",
     image: "https://picsum.photos/150",
   },
 ];
@@ -35,11 +35,10 @@ const Employees = () => {
       {employees.map((employee, index) => (
         <div
           key={index}
-          className={`m-10 text-center text-white ${
-            (isTablet || isMobile) && index === 2
+          className={`m-10 text-center text-white ${(isTablet || isMobile) && index === 2
               ? "sm:col-span-2 sm:mx-auto"
               : ""
-          }`}
+            }`}
         >
           <img
             src={employee.image}
