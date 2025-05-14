@@ -1,5 +1,5 @@
-import tapetseringImage1 from "/src/assets/tapetsering-1.jpg";
-import tapetseringImage2 from "/src/assets/tapetsering-2.jpg";
+import tapetseringImage1 from "./src/assets/tapetsering-1.jpg";
+import tapetseringImage2 from "./src/assets/tapetsering-2.jpg";
 
 const tjänster = [
   {

@@ -1,4 +1,4 @@
-import malningImage from "/src/assets/wallpaper1.webp";
+import malningImage from "./src/assets/wallpaper1.webp";
 
 const tjänster = [
   {

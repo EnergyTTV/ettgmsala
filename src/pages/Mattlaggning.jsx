@@ -1,4 +1,4 @@
-import badrumImage from "/src/assets/badrum-läggning.jpg";
+import badrumImage from "./src/assets/badrum-läggning.jpg";
 
 const tjänster = [
   {
