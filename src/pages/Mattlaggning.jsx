@@ -1,4 +1,4 @@
-import badrumImage from "./src/assets/badrum-läggning.jpg";
+import badrumImage from "/src/assets/badrum-läggning.jpg";
 
 const tjänster = [
   {
@@ -24,8 +24,9 @@ const Mattlaggning = () => {
       {tjänster.map((service, index) => (
         <div
           key={index}
-          className={`w-3/4 flex flex-col md:flex-row items-center bg-transparent ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-            }`}
+          className={`w-3/4 flex flex-col md:flex-row items-center bg-transparent ${
+            index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+          }`}
         >
           <img
             src={service.src}

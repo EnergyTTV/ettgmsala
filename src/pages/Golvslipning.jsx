@@ -1,4 +1,4 @@
-import golvslipningImage from "./src/assets/golvslipning.jpg";
+import golvslipningImage from "/src/assets/golvslipning.jpg";
 
 const tjänster = [
   {
