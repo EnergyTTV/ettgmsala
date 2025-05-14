@@ -77,7 +77,7 @@ const Tapetsering = () => {
             <img
               src={service.src}
               alt={service.name}
-              className="w-full md:w-1/2 h-70 object-cover rounded-md"
+              className="w-full md:w-1/2 h-100 object-cover rounded-md"
             />
             <div className="w-full md:w-1/2 p-6 text-left">
               <h2 className="text-2xl font-bold mb-2">{service.name}</h2>
