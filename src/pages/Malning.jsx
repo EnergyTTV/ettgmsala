@@ -1,4 +1,4 @@
-import malningImage from "./src/assets/wallpaper1.webp";
+import malningImage1 from "/src/assets/starfors_1440p.jpg";
 
 const tjänster = [
   {
@@ -9,12 +9,12 @@ const tjänster = [
     ✅ Tapetsering och dekormålning – Personliga och stilrena lösningar.<br/>
     ✅ Varumärkesanpassning – Färgsättning och design enligt företagsprofil.<br/><br/>
     Vi garanterar kvalitet, noggrannhet och ett resultat som håller över tid. Kontakta oss för en kostnadsfri offert!`,
-    src: malningImage,
+    src: malningImage1,
   },
   {
     name: "Mattläggning",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    src: malningImage,
+    src: malningImage1,
   },
 ];
 

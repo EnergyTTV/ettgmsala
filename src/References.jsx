@@ -4,7 +4,7 @@ import golvslipningImage from "/src/assets/golvslipning.jpg";
 import tapetseringImage from "/src/assets/tapetsering-1.jpg";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -36,7 +36,7 @@ const References = () => {
           }}
           speed={3000}
           slidesPerView={"3"}
-          modules={[Autoplay]}
+          modules={[Autoplay, Navigation]}
           breakpoints={{
             0: {
               slidesPerView: 1,
@@ -45,6 +45,7 @@ const References = () => {
               slidesPerView: 3,
             },
           }}
+          navigation
         >
           {references.map((ref, index) => (
             <SwiperSlide key={index}>
