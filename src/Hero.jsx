@@ -7,8 +7,6 @@ const Hero = () => {
     <div className="relative w-full h-screen overflow-hidden flex items-center justify-center">
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-screen flex flex-col items-center">
-          <script src="https://static.elfsight.com/platform/platform.js" async></script>
-          <div class="elfsight-app-7fe4f984-1a76-463e-931a-a529e6477ef2" data-elfsight-app-lazy></div>
           <h1 className="text-white text-center text-4xl md:text-6xl font-bold">
             Välkommen!
           </h1>

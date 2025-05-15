@@ -1,4 +1,4 @@
-import golvslipningImage from "/src/assets/golvslipning.jpg";
+import golvslipningImage from "/src/assets/golvslipning1.jpg";
 
 const tjänster = [
   {
@@ -19,9 +19,8 @@ const Golvslipning = () => {
       {tjänster.map((service, index) => (
         <div
           key={index}
-          className={`w-3/4 flex flex-col md:flex-row items-center bg-transparent ${
-            index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-          }`}
+          className={`w-3/4 flex flex-col md:flex-row items-center bg-transparent ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            }`}
         >
           <img
             src={service.src}
