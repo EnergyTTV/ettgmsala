@@ -116,7 +116,7 @@ const Mattlaggning = () => {
                     setLightboxOpen(true);
                     setTimeout(() => {
                       setShowLightboxSwiper(true);
-                    }, 0);
+                    });
                     mainSwiperRef.current?.autoplay?.stop(); // ⏸️ Pause autoplay
                   }}
                 >
@@ -140,7 +140,8 @@ const Mattlaggning = () => {
             onClick={() => {
               setLightboxOpen(false);
               setShowLightboxSwiper(false);
-              mainSwiperRef.current?.autoplay?.start(); // ▶️ Resume autoplay
+              setThumbsSwiper(null); // 🛠 Reset thumb swiper
+              mainSwiperRef.current?.autoplay?.start();
             }}
           >
             &times;

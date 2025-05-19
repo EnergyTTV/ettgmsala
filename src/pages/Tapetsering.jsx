@@ -70,9 +70,8 @@ const Tapetsering = () => {
         {tjänster.map((service, index) => (
           <div
             key={index}
-            className={`w-3/4 flex flex-col md:flex-row items-center bg-transparent ${
-              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-            }`}
+            className={`w-3/4 flex flex-col md:flex-row items-center bg-transparent ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              }`}
           >
             <img
               src={service.src}
@@ -145,7 +144,8 @@ const Tapetsering = () => {
             onClick={() => {
               setLightboxOpen(false);
               setShowLightboxSwiper(false);
-              mainSwiperRef.current?.autoplay?.start(); // ▶️ Resume autoplay
+              setThumbsSwiper(null); // 🛠 Reset thumb swiper
+              mainSwiperRef.current?.autoplay?.start();
             }}
           >
             &times;
