@@ -156,7 +156,6 @@ const Tapetsering = () => {
               {/* Fullscreen Swiper */}
               <Swiper
                 key={`${lightboxOpen}-${startIndex}`}
-                initialSlide={startIndex}
                 modules={[Navigation, Thumbs]}
                 navigation
                 loop
