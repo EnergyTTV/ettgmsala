@@ -44,6 +44,7 @@ const completed = [
 ];
 
 const Tapetsering = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [startIndex, setStartIndex] = useState(0);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -70,8 +71,9 @@ const Tapetsering = () => {
         {tjänster.map((service, index) => (
           <div
             key={index}
-            className={`w-3/4 flex flex-col md:flex-row items-center bg-transparent ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
+            className={`w-3/4 flex flex-col md:flex-row items-center bg-transparent ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            }`}
           >
             <img
               src={service.src}
@@ -136,6 +138,11 @@ const Tapetsering = () => {
         </div>
       </div>
 
+      <div className="font-bold text-white text-center p-10">
+        <h1 className="text-4xl">Kontakta oss för en kostnadsfri offert</h1>
+        <h1 className="text-3xl">070-862 00 07</h1>
+      </div>
+
       {/* Lightbox Modal */}
       {lightboxOpen && (
         <div className="fixed inset-0 bg-black/90 z-50 flex flex-col items-center justify-center px-4">
@@ -159,8 +166,13 @@ const Tapetsering = () => {
                 modules={[Navigation, Thumbs]}
                 navigation
                 loop
+                initialSlide={startIndex}
                 thumbs={{ swiper: thumbsSwiper }}
-                onSwiper={(swiper) => (lightboxRef.current = swiper)}
+                onSwiper={(swiper) => {
+                  lightboxRef.current = swiper;
+                  setActiveIndex(swiper.realIndex); // 👈 Initialize index
+                }}
+                onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)} // 👈 Update index on change
                 className="w-full flex-1 max-h-[90vh]"
               >
                 {completed.map((ref, index) => (
@@ -189,11 +201,18 @@ const Tapetsering = () => {
                 className="w-full max-w-6xl"
               >
                 {completed.map((ref, index) => (
-                  <SwiperSlide key={index} className="cursor-pointer">
+                  <SwiperSlide
+                    key={index}
+                    className={`cursor-pointer border-4 ${
+                      index === activeIndex
+                        ? "border-white"
+                        : "border-transparent"
+                    } rounded-md transition-all duration-300`}
+                  >
                     <img
                       src={ref.src}
                       alt={`thumb-${index}`}
-                      className="object-cover h-20 w-full rounded-md border border-white"
+                      className="object-cover h-20 w-full rounded-md"
                     />
                   </SwiperSlide>
                 ))}

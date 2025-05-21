@@ -36,7 +36,7 @@ html {
   width: auto;
   /* Let it grow based on padding */
   height: auto;
-  padding: 1.7rem;
+  padding: 1.5rem;
   /* <<< THIS is the padding around the arrow */
   border-radius: 9999px;
   /* Circle shape */
@@ -49,10 +49,8 @@ html {
 }
 
 @media (min-width: 768px) {
-
   .swiper-button-prev:hover,
   .swiper-button-next:hover {
-    background-color: rgba(0, 0, 0, 0.5);
     transform: scale(1.2);
     /* optional: make it pop slightly on hover */
   }
