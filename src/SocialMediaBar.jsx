@@ -4,7 +4,7 @@ const SocialMediaBar = () => {
   return (
     <div className="flex flex-row justify-center space-x-4 mt-4">
       <a
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/ettgmsala/"
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -1,6 +1,6 @@
 import badrumImage from "/src/assets/badrum-läggning.jpg";
 import fasadImage from "/src/assets/fasad-målning.jpg";
-import golvslipningImage from "/src/assets/golvslipning.jpg";
+import golvslipningImage from "/src/assets/golvslipning1.jpg";
 import tapetseringImage from "/src/assets/tapetsering-1.jpg";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";

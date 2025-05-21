@@ -1,4 +1,3 @@
-import forboLogo from "../assets/companies/forbo.svg";
 import gerflorLogo from "../assets/companies/gerflor1.svg";
 import tarkettLogo from "../assets/companies/tarkett.svg";
 import duroLogo from "../assets/companies/duro.svg";
@@ -7,7 +6,6 @@ import anzaLogo from "../assets/companies/anza.svg";
 import boråstapeterLogo from "../assets/companies/borastapeter.svg";
 
 const suppliers = [
-  { name: "Supplier 1", logo: forboLogo },
   { name: "Supplier 2", logo: gerflorLogo },
   { name: "Supplier 3", logo: tarkettLogo },
   { name: "Supplier 4", logo: duroLogo },
