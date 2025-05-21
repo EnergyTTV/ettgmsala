@@ -28,7 +28,7 @@ export default function ScrollIndicator() {
 
   return (
     isVisible && (
-      <div className="absolute bottom-14 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2">
+      <div className="pb-11 absolute bottom-14 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2">
         {/* Show the Mouse icon on larger screens */}
         <Mouse
           className="w-10 h-10 text-white animate-bounce hidden md:block cursor-pointer"
